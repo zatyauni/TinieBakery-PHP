@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Welcome to Tinie Bakery</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+	
+header {
+  background-color: #E5397F;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+input[type=text], input[type=password] {
+	
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 350px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ 
+}
+
+button {
+  text-align: center;
+  background-color: #E5397F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 350px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  text-align: center;
+  width: auto;
+  padding: 10px 20px;
+  background-color: #E5397F;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 18px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float:none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:#f8B0C4">	
+<header> 
+<h2>TINIE BAKERY </h2>
+</header> 
+<form name="form1" action="fana login.php" method="post">
+  <div class="imgcontainer">
+    <img src="logo.png" alt="Avatar"  height="250" class="avatar">
+  </div>
+
+  <div class="container"><b>Username</b><br>
+    <input type="text" placeholder="Enter Username" id="user" name="user" required><br>
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" id="pass" name="pass" required><br>
+        
+    <button type="submit" name="login" value="login">Login</button>
+    <label><br>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f8B0C4">
+    
+    <span class="psw">Don't have an account? <a href="a-register.html" style="color: #E5397F">Register Here</a></span>
+  </div>
+</form>
+</body>
+</html>

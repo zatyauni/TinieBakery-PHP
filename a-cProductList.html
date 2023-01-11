@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/16e4f6d593.js"></script>
+<link rel="stylesheet" href="style.css">
+	
+<title>Product List</title>
+	
+<style>
+	* {box-sizing: border-box;
+	 font-family: Arial, Helvetica, sans-serif;}
+	
+/*style the header*/
+	header {background-color: #F8B0C4;
+			padding: 5px;
+			text-align: center;
+		font-size: 10px;
+			color: white;}
+	
+	   .logoutLblPos{
+   right:10px;
+   top:5px;
+}
+	
+/*style for dropdown*/
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float:left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #E5397F;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #E5397F;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	
+/*container for flexboxes*/
+	section {display: -webkit-flex;
+			 display: flex;}
+	
+/*style content*/
+	article {-webkit-flex: 3;
+			 -ms-flex: 3;
+			 flex: 3;
+			 background-color:#F8B0C4;
+			 padding: 135px;
+			 }
+	
+/*style image thumbnail*/
+img {
+  
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+	}
+	
+/*style footer*/
+	footer {background-color: #E5397F;
+			padding: 2px;
+			text-align: center;
+			color: white;
+			margin: 0;}
+
+/*make menu and content sit on top each other*/
+	(max-width: 600px)
+	{ section {-webkit-flex-direction: column;
+				flex-direction: column;}
+	}
+</style>
+	<form align="right" name="form1" method="post" action="index.html">
+  <label class="logoutLblPos">
+  <a href="register.html"><input name="submit2" type="submit" id="submit2" value="Logout"></a>
+  </label>
+</form>
+</head>
+
+<body style="background-color: #F8B0C4;">
+<header>
+	<img src="logo.png" alt="Tinie Bakery Logo" >
+</header>
+	
+<ul>
+	<li><a href="a-cHome.html">HOME</a></li>
+  	<li><a href="a-cProductList.html">PRODUCT</a></li>
+  	<li><a href="#addtocart">CART</a></li>
+	<li><a href="a-cCariPurchase.html">MY PURCHASE</a></li>
+</ul>
+	
+<section>
+	<article>
+		<div class="wrapper">
+			<form name="form1" method="post" action="customerlistID.php">
+			<div class="view_main">
+				<p style="background-color: white;text-align: center;padding: 8px;font-size: 28px;">CAKES</p>
+				<div class="view_wrap grid-view" style="display: inline-block;">
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="occ 9.jpg" alt="Occassion 9">
+						</div>
+						<div class="vi_right">
+							<p class="title" name="1"><b>BF01</b><br>Black Forest<br>Cake</p>
+							<p class="content">RM 78.00/1.8 Kg</p>
+							<div class="btn" name="atc1">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn1">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="occ 8.jpg" alt="Occassion 8">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>RV02</b><br>Red Velvet<br>Cake</p>
+							<p class="content">RM 88.00/2.2 Kg</p>
+							<div class="btn" name="atc2">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn2">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="kids 8.jpg" alt="Kids 8">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>FP03</b><br>Frame Photo Blueberry Cake</p>
+							<p class="content">RM 65.00/1 Kg</p>
+							<div class="btn" name="atc3">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn3">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="wed 8.jpg" alt="Wedding 8">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>WC04</b><br>White Cake<br>with Fir Trees</p>
+							<p class="content">RM 290.00/2.2 Kg</p>
+							<div class="btn" name="atc4">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn4">Buy Now</div>
+						</div>
+					</div>
+					<p style="background-color: white;text-align: center;padding: 8px;font-size: 28px;">DESSERT</p>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="dessert 5.jpg" alt="Dessert 5">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>CR05</b><br>Chocolate Rum Ball Cup Cake</p>
+							<p class="content">RM 10.00/6 pcs</p>
+							<div class="btn" name="atc5">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn5">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="dessert 4.jpg" alt="Dessert 4">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>CC06</b><br>Cup Cake<br>Chocolate</p>
+							<p class="content">RM 2.80/pcs</p>
+							<div class="btn" name="atc6">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn6">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="dessert 7.jpg" alt="Dessert 7">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>DC07</b><br>Durian<br>Crepe</p>
+							<p class="content">RM 10.00/4pcs</p>
+							<div class="btn" name="atc7">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn7">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="dessert 6.jpg" alt="Dessert 6">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>BC08</b><br>Biscoff Cheese<br>Tart</p>
+							<p class="content">RM 35.00/38pcs</p>
+							<div class="btn" name="atc8">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn8">Buy Now</div>
+						</div>
+					</div>
+					<p style="background-color: white;text-align: center;padding: 8px;font-size: 28px;">BUN</p>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="Bun 4.jpg" alt="Bun 4">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>SR09</b><br>Sausage<br>Roll</p>
+							<p class="content">RM 1.00/pcs</p>
+							<div class="btn" name="atc9">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn9">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="bun 5.jpg" alt="Bun 5">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>MC10</b><br>Mexico Coffee<br>Bun</p>
+							<p class="content">RM 1.80/pcs</p>
+							<div class="btn" name="atc10">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn10">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="bun 7.jpg" alt="bun 7">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>SC11</b><br>Strawberry Cream<br>Bun</p>
+							<p class="content">RM 1.50/pcs</p>
+							<div class="btn" name="atc11">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn11">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="bun 6.jpg" alt="bun 6">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>RB12</b><br>Red Bean<br>Bun</p>
+							<p class="content">RM 1.30/pcs</p>
+							<div class="btn" name="atc12">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn12">Buy Now</div>
+						</div>
+					</div>
+					<p style="background-color: white;text-align: center;padding: 8px;font-size: 28px;">COOKIES</p>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="cookies 7.jpg" alt="Cookies 7">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>WP13</b><br>Whoopie<br>Pie</p>
+							<p class="content">RM 20.00/16pcs</p>
+							<div class="btn" name="atc13">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn13">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="cookies 6.jpg" alt="Cookies 6">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>RC14</b><br>Red Velvet White Chocolate Chip</p>
+							<p class="content">RM 22.00/50pcs</p>
+							<div class="btn" name="atc14">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn14">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="cookies 5.jpg" alt="Cookies 5">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>TC15</b><br>Salted Chocolate Chip Cookies</p>
+							<p class="content">RM 18.00/50pcs</p>
+							<div class="btn" name="atc15">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn15">Buy Now</div>
+						</div>
+					</div>
+					<div class="view_item">
+						<div class="vi_left">
+							<img src="cookies 4.jpg" alt="Cookies 4">
+						</div>
+						<div class="vi_right">
+							<p class="title"><b>VW16</b><br>Red Velvet<br>Whoopie Pie</p>
+							<p class="content">RM 25.00/16pcs</p>
+							<div class="btn" name="atc16">Add to Cart</div>
+							<br>
+							<div class="btn" name="bn16">Buy Now</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+	</article>
+</section>
+<br>
+<footer>
+<center>
+  <h5>About Us</h5>
+<div class="custom_block"><br>We know quality when we taste it, and we believe you do too. Best Cakes for all with the best price since 2012 !</div><br>
+<p class="infoline"><i ></i>No. 93, Jalan Meru Perdana 1, Taman Meru Perdana, 31200 Chemor, Perak Darul Ridzuan.</p><br>
+<p class="infoline"><i></i> Phone: 016 637 7824</p>
+<p class="infoline"></p><br>
+
+
+<center>
+<div class="footer-copyright">Powered By <a href="#">eShop Malaysia</a>Tinie Bakery ©️ Copyright - All rights reserved. 2012 - 2021</div>
+	</center>
+
+</center>
+</footer>
+
+</body>
+</html>

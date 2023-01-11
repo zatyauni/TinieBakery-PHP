@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+<title>Untitled Document</title>
+<style>
+	* {box-sizing: border-box;}
+	body {font-family: Arial, Helvetica, sans-serif;}
+	
+/*style the header*/
+	header {background-color: #E5397F;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;}
+
+/*container for flexboxes*/
+	section {display: -webkit-flex;
+			 display: flex;}
+	
+/* style navigation menu*/
+	nav {-webkit-flex: 1;
+		 -ms-flex: 1;
+		 flex: 1;
+		 background: #DCBABA;
+		 padding: 20px;
+		 color: black;}
+
+/*style list inside menu*/
+	nav ul {list-style-type:none;
+			padding:10;}
+	
+/*style content*/
+	article {-webkit-flex: 3;
+			 -ms-flex: 3;
+			 flex: 3;
+			 background-color: #FFFFFF;
+			 padding: 135px;}
+	
+/*style footer*/
+	footer {background-color: #E5397F;
+			padding: 10px;
+			text-align: center;
+			color: white;}
+
+/*make menu and content sit on top each other*/
+	(max-width: 600px)
+	{ section {-webkit-flex-direction: column;
+				flex-direction: column;}
+	}
+</style>
+</head>
+<body>
+<header>
+	<h2>Welcome to Tinie Bakery</h2></header>
+
+<section>
+	<nav> <ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a></li>
+			</ul>
+	</nav>
+	<article>
+		<h1>Login</h1>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+		<br><br>
+		<label for="password">Password:</label>
+		<input type="password">
+		<br><br>
+		<button type="button">Login</button>
+		<br>
+	
+		<p>Do not have account? Register now.</p>
+	</article>
+</section>
+<footer>
+	<p>Contact Us: 01136676585<br>Address: 118, Persiaran Taman Meru 30, Taman Meru 2C</p>
+</footer>
+</body>
+</html>
